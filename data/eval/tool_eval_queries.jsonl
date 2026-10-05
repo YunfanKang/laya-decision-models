@@ -1,0 +1,89 @@
+{"context": "Attached files: none", "request": "Show me the boundary of Champaign County, Illinois.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Get the census tracts in Cook County.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Map the city limits of Urbana.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Map the state of Colorado.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Get the county boundaries for Iowa.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Where are the University of Illinois and Purdue University? Put them on a map.", "gold": ["geocode_places"]}
+{"context": "Attached files: none", "request": "Find coordinates for the Hoover Dam and Lake Mead.", "gold": ["geocode_places"]}
+{"context": "Attached files: none", "request": "Geocode these: 1600 Pennsylvania Ave, Washington DC; 350 5th Ave, New York.", "gold": ["geocode_places"]}
+{"context": "Attached files: none", "request": "Show me the gse embedding of Nairobi between March and May 2025.", "gold": ["embed_zones", "embed_region"]}
+{"context": "Attached files: none", "request": "Show the clay embedding of Champaign County for 2024.", "gold": ["admin_boundary", "embed_zones"]}
+{"context": "Attached files: none", "request": "Show the Tessera embedding of Urbana, IL.", "gold": ["admin_boundary", "embed_zones"]}
+{"context": "Attached files: none", "request": "Which embedding models do you have?", "gold": ["list_embedding_models"]}
+{"context": "Attached files: none", "request": "What prediction heads are available?", "gold": ["list_prediction_heads"]}
+{"context": "Attached files: none", "request": "List the embedding packages I've saved.", "gold": ["list_embedding_packages"]}
+{"context": "Attached files: none", "request": "Embed the rectangle -88.3,40.05,-88.15,40.15 with tessera for 2023.", "gold": ["embed_region"]}
+{"context": "Attached files: none", "request": "Segment the area -88.3,40.05,-88.15,40.15 into 5 look-alike zones.", "gold": ["segment_region"]}
+{"context": "Attached files: none", "request": "How much did the box -95.4,29.7,-95.3,29.8 change between 2018 and 2024?", "gold": ["embedding_change"]}
+{"context": "Attached files: none", "request": "Did the area around Paradise, CA change between 2017 and 2019?", "gold": ["embedding_change", "geocode_places", "admin_boundary"]}
+{"context": "Attached files: none", "request": "Compare how similar Chicago's Loop and downtown Houston look from space.", "gold": ["compare_regions", "geocode_places"]}
+{"context": "Attached files: none", "request": "Compare the Amazon near Manaus with the Congo basin near Kisangani from space.", "gold": ["compare_regions", "geocode_places"]}
+{"context": "Attached files: none", "request": "Predict tree canopy cover for the bounding box -87.7,41.8,-87.6,41.9.", "gold": ["predict_for_region"]}
+{"context": "Attached files: none", "request": "Predict building height for bbox -74.02,40.70,-73.97,40.75.", "gold": ["predict_for_region"]}
+{"context": "Attached files: none", "request": "Write a Python script that computes NDVI on a synthetic array and run it.", "gold": ["execute_code"]}
+{"context": "Attached files: none", "request": "Simulate 1000 random walks and plot the distribution of endpoints.", "gold": ["execute_code"]}
+{"context": "Attached files: none", "request": "Calculate the Fibonacci numbers below 100 in Python.", "gold": ["execute_code"]}
+{"context": "Attached files: none", "request": "What is spatial autocorrelation?", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Explain the difference between kriging and IDW.", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Thanks, that's all.", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Explain what you did in the last step.", "gold": ["none"]}
+{"context": "Attached files: none", "request": "What tools do you have?", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Find datasets about flooding in Texas.", "gold": ["request_capability", "none"]}
+{"context": "Attached files: none", "request": "Find published notebooks on hospital accessibility that I could reuse.", "gold": ["request_capability", "none"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Make a heat map of these crimes.", "gold": ["add_map_layer", "aggregate_to_grid"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Show these incidents on the map as points.", "gold": ["add_map_layer"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Show me the crime hotspots.", "gold": ["add_map_layer", "aggregate_to_grid", "cluster_points"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Bin the crimes into a hex grid and map the density.", "gold": ["aggregate_to_grid"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Which column holds the date?", "gold": ["detect_time_column"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Show only incidents from 2025.", "gold": ["filter_by_time", "select_by_attribute"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Filter to thefts in summer 2025 and map them.", "gold": ["filter_by_time", "select_by_attribute"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Plot monthly counts of incidents.", "gold": ["time_series"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "How many incidents are there per year? Show a chart.", "gold": ["time_series"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Where did activity concentrate in the last month compared with before?", "gold": ["temporal_hotspots"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Find clusters of burglaries.", "gold": ["cluster_points", "select_by_attribute"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Run DBSCAN on these points.", "gold": ["cluster_points"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Give me summary statistics of the columns.", "gold": ["summary_statistics", "inspect_file_for_analysis"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "Keep only rows where primary_type is BATTERY.", "gold": ["select_by_attribute"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude)", "request": "What's in this file?", "gold": ["inspect_file_for_analysis", "summary_statistics", "inspect_vector"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude); community_areas.geojson (polygons; columns: area_num, name, population)", "request": "Count crimes per community area and make a choropleth.", "gold": ["count_points_in_areas"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude); community_areas.geojson (polygons; columns: area_num, name, population)", "request": "Compare crime counts per area between 2024 and 2025.", "gold": ["compare_periods"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude); community_areas.geojson (polygons; columns: area_num, name, population)", "request": "Which community areas had the biggest increase in crime this year versus last?", "gold": ["compare_periods"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude); community_areas.geojson (polygons; columns: area_num, name, population)", "request": "Assign each crime to the community area it falls in.", "gold": ["vector_spatial_join", "count_points_in_areas"]}
+{"context": "Attached files: crimes.csv (points; columns: date, primary_type, latitude, longitude); police_stations.geojson (points; columns: district, name)", "request": "How far is each crime from the nearest police station?", "gold": ["nearest_distance"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Is poverty rate spatially clustered?", "gold": ["global_spatial_autocorrelation"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Are high-income tracts next to other high-income tracts?", "gold": ["global_spatial_autocorrelation", "local_moran_lisa"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Map the hot spots and cold spots of median income with LISA.", "gold": ["local_moran_lisa"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Run a Getis-Ord Gi* hotspot analysis on poverty rate.", "gold": ["local_getis_ord"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Make a Moran scatterplot of median income.", "gold": ["moran_scatterplot"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Does poverty rate explain median income, accounting for spatial dependence?", "gold": ["spatial_regression"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Fit a spatial lag model of poverty on income.", "gold": ["spatial_regression"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Group these tracts into 6 contiguous regions similar on income and poverty.", "gold": ["regionalize"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "How many neighbours does each tract have? Any islands?", "gold": ["spatial_weights"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Build a queen contiguity weights matrix.", "gold": ["spatial_weights"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Dissolve the tracts by county.", "gold": ["dissolve_layer"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Simplify these boundaries so they draw faster.", "gold": ["simplify_layer"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Give me the centroid of each tract.", "gold": ["geometry_summary"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Reproject this to EPSG:5070.", "gold": ["reproject_vector"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Convert this to GeoJSON for download.", "gold": ["vector_to_geojson"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Put these tracts on the map shaded by poverty rate.", "gold": ["add_map_layer"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Make a static PNG map of median income.", "gold": ["render_map_image"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "What CRS and extent does this layer have?", "gold": ["inspect_vector"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Show me the tracts where poverty rate is above 30%.", "gold": ["select_by_attribute"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "What's the average median income?", "gold": ["summary_statistics"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Embed each tract with gse for 2024.", "gold": ["embed_zones"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black); hospitals.geojson (points; columns: name, beds)", "request": "Distance from each tract to the nearest hospital.", "gold": ["nearest_distance"]}
+{"context": "Attached files: tract_embeddings.csv (table; columns: GEOID, e0..e63); tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Predict median income per tract from these embeddings.", "gold": ["fit_zone_model"]}
+{"context": "Attached files: zone_embeddings.csv (table; columns: zone_id, e0..e63); fields.geojson (polygons; columns: zone_id, yield)", "request": "Train a model to predict yield from the zone embeddings.", "gold": ["fit_zone_model"]}
+{"context": "Attached files: urbana_gse_2024.npz (saved embedding package)", "request": "Run the pretrained heads on this saved embedding.", "gold": ["predict_from_package"]}
+{"context": "Attached files: chicago_gse.tif, houston_gse.tif (embedding rasters already on the map)", "request": "Recolour the embedded regions on one shared basis so colours are comparable.", "gold": ["align_embedding_colors"]}
+{"context": "Attached files: kmeans_zones.tif (classified raster, EPSG:4326)", "request": "Show this classified raster on the map.", "gold": ["add_raster_layer"]}
+{"context": "Attached files: rivers.geojson (lines); champaign_county.geojson (polygon)", "request": "Clip the rivers to Champaign County.", "gold": ["clip_layer"]}
+{"context": "Attached files: counties.geojson (polygons); floodplain.geojson (polygons)", "request": "Keep only the parts of counties that overlap the floodplain.", "gold": ["intersect_layers"]}
+{"context": "Attached files: parcels.geojson (polygons); lakes.geojson (polygons)", "request": "Remove the lakes from the land parcels.", "gold": ["erase_layer"]}
+{"context": "Attached files: schools.geojson (points; columns: name, enrollment)", "request": "Draw a 5 km buffer around the schools.", "gold": ["buffer_layer"]}
+{"context": "Attached files: hospitals.geojson (points; columns: name, beds)", "request": "Buffer hospitals by 10 miles.", "gold": ["buffer_layer"]}
+{"context": "Attached files: parcels.geojson (polygons); rivers.geojson (lines)", "request": "Which parcels are within 500 m of a river?", "gold": ["buffer_layer", "nearest_distance"]}
+{"context": "Attached files: roads.shp (lines; TIGER/Line)", "request": "Inspect this shapefile.", "gold": ["inspect_vector"]}
+{"context": "Attached files: tl_2024_17_county.zip (TIGER/Line counties)", "request": "Show this TIGER file on the map.", "gold": ["add_map_layer"]}
+{"context": "Attached files: notes.txt (text)", "request": "Read the notes file I uploaded.", "gold": ["read_text_file", "inspect_file_for_analysis"]}
+{"context": "Attached files: tracts.geojson (polygons; columns: GEOID, median_income, poverty_rate, pct_black)", "request": "Save a short summary of the income statistics as report.md for me to download.", "gold": ["write_output_file", "summary_statistics"]}

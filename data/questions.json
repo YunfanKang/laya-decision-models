@@ -1,0 +1,81 @@
+{
+  "router_zero_shot": {
+    "graph": {
+      "type": "noul",
+      "instructions": "Does this query name a specific person, organization or tag?"
+    },
+    "spatial": {
+      "type": "noul",
+      "instructions": "Does this query mention a place or geographic location?"
+    }
+  },
+  "router_finetuned": {
+    "graph": {
+      "type": "noul",
+      "instructions": "Does this query name a specific person, organization or tag, ask what is popular, or ask for resources linked to another resource?"
+    },
+    "spatial": {
+      "type": "noul",
+      "instructions": "Does this query mention a specific place, coordinates, or a distance or area on a map?"
+    }
+  },
+  "tool": {
+    "type": "choice",
+    "instructions": "Which tool should the geospatial analysis agent call FIRST for this request? Choose none if it should answer without calling a tool.",
+    "criteria": {
+      "admin_boundary": "THE tool for the boundary of a named US state, county or city —…",
+      "geocode_places": "Geocode place or institution names to coordinates (Nominatim).",
+      "add_map_layer": "Put a dataset on the user's INTERACTIVE MAP as a styled layer they can…",
+      "add_raster_layer": "Drape a georeferenced IMAGE over the user's map, for pixels that ARE the result:…",
+      "inspect_vector": "Read a vector / shapefile's metadata (CRS, extent, geometry type, feature count, attribute columns)…",
+      "render_map_image": "Draw a vector dataset into a STATIC PNG PICTURE (optionally shaded by `column`) and…",
+      "vector_to_geojson": "Convert a vector dataset to GeoJSON (reprojected to WGS84 by default) and return a…",
+      "reproject_vector": "Reproject a vector dataset to a target CRS (e.g.",
+      "vector_spatial_join": "Spatial-join two vector datasets (e.g.",
+      "read_text_file": "Read a UTF-8 text-like file from an allowed local path and return its contents.",
+      "inspect_file_for_analysis": "Load a local file or uploaded file_id into an LLM-friendly JSON payload for interpretation.",
+      "write_text_file": "Write text output to a local file under an allowed root.",
+      "write_output_file": "Write downloadable output for the user into managed agent storage using only a filename.",
+      "clip_layer": "CLIP: cookie-cut one layer with another.",
+      "dissolve_layer": "DISSOLVE / group: merge features into bigger ones.",
+      "intersect_layers": "INTERSECT: keep only the geometry where two layers overlap, and give each resulting piece…",
+      "erase_layer": "ERASE / difference: subtract one layer from another.",
+      "buffer_layer": "BUFFER: draw a zone of a given GROUND distance around every feature — 'everything…",
+      "simplify_layer": "SIMPLIFY / generalize: thin out vertices so a heavy boundary layer draws fast and…",
+      "geometry_summary": "GEOMETRY SUMMARY: derive simple shapes from a layer — `output`='centroids' (one point per feature,…",
+      "select_by_attribute": "SELECT A SUBSET of a layer by its attributes — the everyday GIS 'select…",
+      "count_points_in_areas": "Aggregate POINTS INTO AREAS (point-in-polygon) and put the result on the user's INTERACTIVE MAP…",
+      "aggregate_to_grid": "Bin POINTS INTO A HEX OR SQUARE GRID and map the density as a…",
+      "nearest_distance": "Measure how far each feature of one layer is from the NEAREST feature of…",
+      "cluster_points": "Detect spatial CLUSTERS / HOTSPOTS among points with DBSCAN and map them coloured by…",
+      "summary_statistics": "Descriptive statistics for a dataset's attributes: count, min, max, mean, median, std, sum —…",
+      "detect_time_column": "Find which column holds the DATE/TIME in a dataset and report the parsed span…",
+      "filter_by_time": "Slice a dataset to a time window and put just that window on the…",
+      "time_series": "Count records per time period and return a CSV table plus a PNG line/bar…",
+      "compare_periods": "Compare two time windows per AREA: counts records inside each polygon of an areas…",
+      "temporal_hotspots": "Find WHERE activity concentrated in the most recent period compared with the average of…",
+      "global_spatial_autocorrelation": "Test whether a variable is spatially CLUSTERED — Moran's I, Geary's C and Getis-Ord…",
+      "local_moran_lisa": "LISA CLUSTER MAP (Local Moran's I) — puts the HOT SPOTS and COLD SPOTS…",
+      "local_getis_ord": "Getis-Ord Gi* HOT SPOT / COLD SPOT analysis — the ArcGIS-style hotspot map, banded…",
+      "moran_scatterplot": "The MORAN SCATTERPLOT as a downloadable PNG: each area's value against its neighbours' average,…",
+      "spatial_regression": "SPATIAL REGRESSION — 'does X explain Y?' done correctly for areal data, where plain…",
+      "regionalize": "REGIONALIZATION — group areas into CONTIGUOUS regions similar on several variables, using GeoDa's own…",
+      "spatial_weights": "Build and INSPECT the spatial weights matrix ('who is next to whom') that every…",
+      "list_embedding_models": "List the remote-sensing foundation models available for embedding a region.",
+      "embed_region": "Embed a RECTANGLE with remote-sensing foundation models and PUT THE RESULT ON THE MAP.",
+      "segment_region": "Segment a region into `k` look-alike zones from its embedding, ON THE MAP.",
+      "embedding_change": "Track how much a region CHANGED across years, from its embeddings.",
+      "compare_regions": "Score how alike TWO regions look from space, using their embeddings.",
+      "align_embedding_colors": "Re-colour several already-embedded regions on ONE shared PCA basis, so the colours mean the…",
+      "list_prediction_heads": "List the pretrained downstream models that turn an embedding into a prediction.",
+      "list_embedding_packages": "List the embedding packages already SAVED, newest first, with region and months.",
+      "predict_for_region": "Run a pretrained downstream head on a region's embedding to PREDICT a value.",
+      "predict_from_package": "Run the pretrained heads on an embedding you ALREADY have — no re-embedding.",
+      "embed_zones": "Embed one or many POLYGONS — the pixels INSIDE each shape — and map…",
+      "fit_zone_model": "Predict a per-zone VALUE from zone embeddings, and map the prediction.",
+      "execute_code": "Execute code in an isolated, sandboxed container and return JSON with exit_code, stdout, stderr,…",
+      "request_capability": "Request another capability (search/analyze/code) when you cannot complete your task without it — e.g.",
+      "none": "call no tool; answer directly from knowledge or the conversation"
+    }
+  }
+}

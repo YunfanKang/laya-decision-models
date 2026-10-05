@@ -1,0 +1,42 @@
+{"context": "Attached files: none", "request": "Pull the boundary of Travis County, Texas.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Outline Madison, Wisconsin on the map.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "I need the tracts inside Harris County.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Show the state line of Nevada.", "gold": ["admin_boundary"]}
+{"context": "Attached files: none", "request": "Where is the Space Needle? Pin it on the map.", "gold": ["geocode_places"]}
+{"context": "Attached files: none", "request": "Get lat/lon for Argonne National Laboratory and Fermilab.", "gold": ["geocode_places"]}
+{"context": "Attached files: none", "request": "Plot the locations of Stanford, MIT and Caltech.", "gold": ["geocode_places"]}
+{"context": "Attached files: none", "request": "Write and run code that fits a linear regression to 50 random points.", "gold": ["execute_code"]}
+{"context": "Attached files: none", "request": "Use Python to convert 12 miles to kilometres and print it.", "gold": ["execute_code"]}
+{"context": "Attached files: none", "request": "Generate a synthetic DEM with numpy and compute its slope.", "gold": ["execute_code"]}
+{"context": "Attached files: none", "request": "Give me the prithvi embedding of Denver, Colorado for 2023.", "gold": ["admin_boundary", "embed_zones"]}
+{"context": "Attached files: none", "request": "Embed the box -122.5,37.7,-122.35,37.82 with gse.", "gold": ["embed_region"]}
+{"context": "Attached files: none", "request": "How different does the area near Lagos look now versus 2019?", "gold": ["embedding_change", "geocode_places"]}
+{"context": "Attached files: none", "request": "How alike are central Paris and central Berlin from orbit?", "gold": ["compare_regions", "geocode_places"]}
+{"context": "Attached files: none", "request": "Estimate impervious surface for bbox -90.3,38.55,-90.15,38.7.", "gold": ["predict_for_region"]}
+{"context": "Attached files: none", "request": "Split -97.8,30.2,-97.65,30.35 into 4 similar-looking zones.", "gold": ["segment_region"]}
+{"context": "Attached files: none", "request": "Which remote-sensing models can you embed with?", "gold": ["list_embedding_models"]}
+{"context": "Attached files: none", "request": "What does Moran's I measure?", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Great, thank you!", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Can you summarise what we found so far?", "gold": ["none"]}
+{"context": "Attached files: none", "request": "Look for datasets on wildfire smoke exposure.", "gold": ["request_capability", "none"]}
+{"context": "Attached files: none", "request": "Are there any published notebooks on flood inundation mapping?", "gold": ["request_capability", "none"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Map these permits as a heatmap.", "gold": ["add_map_layer", "aggregate_to_grid"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Only show permits issued since 2024.", "gold": ["detect_time_column", "filter_by_time", "select_by_attribute"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Is permitting rising or falling month to month?", "gold": ["detect_time_column", "time_series"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Where did permits concentrate recently compared with earlier years?", "gold": ["detect_time_column", "temporal_hotspots"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Keep only the demolition permits.", "gold": ["select_by_attribute"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Find spatial clusters of permits.", "gold": ["cluster_points"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon)", "request": "Grid the permits into 1 km squares and shade by count.", "gold": ["aggregate_to_grid"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon); zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "How many permits fall in each zip code? Map it.", "gold": ["count_points_in_areas"]}
+{"context": "Attached files: permits.csv (points; columns: issued_date, permit_type, lat, lon); zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Which zip codes gained the most permits from 2023 to 2025?", "gold": ["detect_time_column", "compare_periods"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Is median rent spatially autocorrelated?", "gold": ["global_spatial_autocorrelation"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Map Getis-Ord hot spots of median rent.", "gold": ["local_getis_ord"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Cluster the zip codes into 5 contiguous regions by rent and population.", "gold": ["regionalize"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Shade the zip codes by population on the map.", "gold": ["add_map_layer"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "What are the mean and median rent?", "gold": ["summary_statistics"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Merge the zip codes into a single outline.", "gold": ["dissolve_layer"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Project this to UTM zone 16N.", "gold": ["reproject_vector"]}
+{"context": "Attached files: zipcodes.geojson (polygons; columns: zip, population, median_rent)", "request": "Embed every zip code with tessera for 2024.", "gold": ["embed_zones"]}
+{"context": "Attached files: wells.geojson (points; columns: well_id, depth_m); streams.geojson (lines)", "request": "How far is each well from the nearest stream?", "gold": ["nearest_distance"]}
+{"context": "Attached files: wells.geojson (points; columns: well_id, depth_m)", "request": "Make a 2 km buffer around each well.", "gold": ["buffer_layer"]}
+{"context": "Attached files: roads.geojson (lines); study_area.geojson (polygon)", "request": "Cut the roads to the study area.", "gold": ["clip_layer"]}

@@ -1,0 +1,96 @@
+{"query": "Which Chicago community areas have the poorest spatial accessibility to hospitals? Produce a map and ranked table.", "graph": false, "spatial": true, "source": "geopathfinder"}
+{"query": "Use the available flood-depth prediction resources to identify required inputs and run or outline a flood-depth prediction workflow.", "graph": false, "spatial": false, "source": "geopathfinder"}
+{"query": "Find flood risk maps for Boone County, Iowa, compare available map years, and summarize covered jurisdictions.", "graph": false, "spatial": true, "source": "geopathfinder"}
+{"query": "Build an OSM-based road network for a wildfire evacuation scenario and identify likely bottleneck road segments.", "graph": false, "spatial": false, "source": "geopathfinder"}
+{"query": "Droughts in California", "graph": false, "spatial": true, "source": "tests"}
+{"query": "Floods in Texas", "graph": false, "spatial": true, "source": "tests"}
+{"query": "datasets about flooding in Illinois", "graph": false, "spatial": true, "source": "tests"}
+{"query": "water datasets", "graph": false, "spatial": false, "source": "tests"}
+{"query": "Water quality datasets in California", "graph": false, "spatial": true, "source": "tests"}
+{"query": "What are the main sources of greenhouse gas emissions?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "What datasets exist for floods?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "climate geospatial data", "graph": false, "spatial": false, "source": "tests"}
+{"query": "flood risk geospatial datasets", "graph": false, "spatial": false, "source": "tests"}
+{"query": "geospatial datasets dams", "graph": false, "spatial": false, "source": "tests"}
+{"query": "water resource management irrigation", "graph": false, "spatial": false, "source": "tests"}
+{"query": "publications by John Smith", "graph": true, "spatial": false, "source": "router_prompt"}
+{"query": "datasets from NASA", "graph": true, "spatial": false, "source": "router_prompt"}
+{"query": "resources tagged climate", "graph": true, "spatial": false, "source": "router_prompt"}
+{"query": "papers affiliated with USGS", "graph": true, "spatial": false, "source": "router_prompt"}
+{"query": "notebooks written by Shaowen Wang", "graph": true, "spatial": false, "source": "authored"}
+{"query": "What has Anand Padmanabhan published on I-GUIDE?", "graph": true, "spatial": false, "source": "authored"}
+{"query": "most popular notebooks", "graph": true, "spatial": false, "source": "authored"}
+{"query": "trending datasets this month", "graph": true, "spatial": false, "source": "authored"}
+{"query": "resources developed by the University of Illinois", "graph": true, "spatial": false, "source": "authored"}
+{"query": "datasets maintained by NOAA", "graph": true, "spatial": false, "source": "authored"}
+{"query": "notebooks that use the SVI dataset", "graph": true, "spatial": false, "source": "authored"}
+{"query": "what publications cite the CyberGIS-Compute paper?", "graph": true, "spatial": false, "source": "authored"}
+{"query": "show me resources related to element id 3f2a9c1e", "graph": true, "spatial": false, "source": "authored"}
+{"query": "who contributed the FireABM notebook?", "graph": true, "spatial": false, "source": "authored"}
+{"query": "which organizations have uploaded the most datasets?", "graph": true, "spatial": false, "source": "authored"}
+{"query": "notebooks categorized as hydrology", "graph": true, "spatial": false, "source": "authored"}
+{"query": "educational resources labeled machine learning", "graph": true, "spatial": false, "source": "authored"}
+{"query": "other datasets by the author of the SNAP dataset", "graph": true, "spatial": false, "source": "authored"}
+{"query": "notebooks connected to the Pysal Access publication", "graph": true, "spatial": false, "source": "authored"}
+{"query": "top viewed OERs", "graph": true, "spatial": false, "source": "authored"}
+{"query": "weather stations near Chicago", "graph": false, "spatial": true, "source": "router_readme"}
+{"query": "land cover data within 50 miles of Denver", "graph": false, "spatial": true, "source": "authored"}
+{"query": "datasets covering 40.1N, 88.2W", "graph": false, "spatial": true, "source": "authored"}
+{"query": "elevation data for the Grand Canyon", "graph": false, "spatial": true, "source": "authored"}
+{"query": "heat vulnerability in Phoenix neighborhoods", "graph": false, "spatial": true, "source": "authored"}
+{"query": "crop yield data for the Midwest", "graph": false, "spatial": true, "source": "authored"}
+{"query": "hurricane damage along the Gulf Coast", "graph": false, "spatial": true, "source": "authored"}
+{"query": "air quality monitoring in Los Angeles County", "graph": false, "spatial": true, "source": "authored"}
+{"query": "groundwater depletion in the Ogallala aquifer", "graph": false, "spatial": true, "source": "authored"}
+{"query": "Sentinel-2 imagery over Nairobi", "graph": false, "spatial": true, "source": "authored"}
+{"query": "census tracts in Champaign County", "graph": false, "spatial": true, "source": "authored"}
+{"query": "wildfire perimeters in northern California 2020", "graph": false, "spatial": true, "source": "authored"}
+{"query": "flood maps for the Mississippi River basin", "graph": false, "spatial": true, "source": "authored"}
+{"query": "road networks in Paradise, CA", "graph": false, "spatial": true, "source": "authored"}
+{"query": "datasets for Springfield", "graph": false, "spatial": true, "source": "authored", "ambiguous": true}
+{"query": "urban heat island studies in Asian megacities", "graph": false, "spatial": true, "source": "authored"}
+{"query": "coastal erosion in Louisiana", "graph": false, "spatial": true, "source": "authored"}
+{"query": "snow cover data for the Rocky Mountains", "graph": false, "spatial": true, "source": "authored"}
+{"query": "NASA datasets about drought in Texas", "graph": true, "spatial": true, "source": "authored"}
+{"query": "USGS streamflow data in Iowa", "graph": true, "spatial": true, "source": "authored"}
+{"query": "notebooks by Shaowen Wang about Chicago", "graph": true, "spatial": true, "source": "authored"}
+{"query": "NOAA precipitation datasets near Houston", "graph": true, "spatial": true, "source": "authored"}
+{"query": "publications from the University of Illinois on Champaign flooding", "graph": true, "spatial": true, "source": "authored"}
+{"query": "most popular datasets for California wildfires", "graph": true, "spatial": true, "source": "authored"}
+{"query": "resources tagged hydrology covering the Great Lakes", "graph": true, "spatial": true, "source": "authored"}
+{"query": "FEMA flood maps for Boone County, Iowa", "graph": true, "spatial": true, "source": "authored"}
+{"query": "notebooks related to the Chicago hospital accessibility dataset", "graph": true, "spatial": true, "source": "authored"}
+{"query": "USDA crop data for Illinois counties", "graph": true, "spatial": true, "source": "authored"}
+{"query": "papers by Michael Goodchild on geographic information science", "graph": true, "spatial": false, "source": "authored"}
+{"query": "what is spatial autocorrelation?", "graph": false, "spatial": false, "source": "authored"}
+{"query": "how do I compute NDVI from Sentinel-2 bands?", "graph": false, "spatial": false, "source": "authored"}
+{"query": "machine learning for flood prediction", "graph": false, "spatial": false, "source": "authored"}
+{"query": "explain the two-step floating catchment area method", "graph": false, "spatial": false, "source": "authored"}
+{"query": "datasets about social vulnerability", "graph": false, "spatial": false, "source": "authored"}
+{"query": "notebooks on deep learning for land cover classification", "graph": false, "spatial": false, "source": "authored"}
+{"query": "compare kriging and inverse distance weighting", "graph": false, "spatial": false, "source": "authored"}
+{"query": "resources about agent-based modeling of evacuation", "graph": false, "spatial": false, "source": "authored"}
+{"query": "time series of global temperature anomalies", "graph": false, "spatial": false, "source": "authored", "ambiguous": true}
+{"query": "what is the clay embedding model?", "graph": false, "spatial": false, "source": "authored"}
+{"query": "tutorials for GeoPandas", "graph": false, "spatial": false, "source": "authored"}
+{"query": "how does climate change affect crop yields?", "graph": false, "spatial": false, "source": "authored"}
+{"query": "datasets similar to NLCD land cover", "graph": true, "spatial": false, "source": "authored", "ambiguous": true}
+{"query": "open-source tools for hydrological modeling", "graph": false, "spatial": false, "source": "authored"}
+{"query": "what is the capital of france?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "what can you do with satellite imagery?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "which embedding models do you have?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "what resolution was that?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "show me the code", "graph": false, "spatial": false, "source": "tests"}
+{"query": "can you handle GeoTIFF?", "graph": false, "spatial": false, "source": "tests"}
+{"query": "Embed this drawn region with the gse model", "graph": false, "spatial": true, "source": "tests", "ambiguous": true}
+{"query": "buffer the hotspot by 2 km and show it on the map", "graph": false, "spatial": true, "source": "tests", "ambiguous": true}
+{"query": "flood risk geospatial analysis", "graph": false, "spatial": false, "source": "tests"}
+{"query": "I-GUIDE Smart Search", "graph": false, "spatial": false, "source": "tests"}
+{"query": "Build an OSM-based road network for a wildfire evacuation scenario in Paradise, California (the 2018 Camp Fire town) and identify likely bottleneck road segments.", "graph": false, "spatial": true, "source": "eval_common.TASKS"}
+{"query": "Rank areas that may face higher exposure to potential dam failure risk using the National Inventory of Dams and related knowledge elements.", "graph": true, "spatial": false, "source": "eval_common.TASKS", "ambiguous": true}
+{"query": "Acquire precipitation, temperature, wind, humidity, and evapotranspiration data for a selected location and prepare it for geospatial analysis.", "graph": false, "spatial": false, "source": "eval_common.TASKS", "ambiguous": true}
+{"query": "Explain and map major drivers of local water stress using the SIMPLE-G water resources.", "graph": true, "spatial": false, "source": "eval_common.TASKS", "ambiguous": true}
+{"query": "Map places where heat-related public sentiment or exposure overlaps with social vulnerability.", "graph": false, "spatial": false, "source": "eval_common.TASKS", "ambiguous": true}
+{"query": "Identify resources that can detect wildfire threat to transportation infrastructure in California and produce an executable workflow plan.", "graph": false, "spatial": true, "source": "eval_common.TASKS"}
+{"query": "Use available biodiversity and land-use resources to summarize how terrestrial biodiversity responds to land-use change and identify candidate datasets for analysis.", "graph": false, "spatial": false, "source": "eval_common.TASKS"}
+{"query": "Generate a heat map of violent crime in Chicago.", "graph": false, "spatial": true, "source": "eval_common.TASKS"}
