@@ -10,7 +10,7 @@ Training sequences are built with the SAME functions the Agent uses at inference
 training exactly as it will be asked in serving. The question wording is part of the model:
 it is written to <out>/iguide_questions.json, and a client must send those questions verbatim.
 
-    python training/finetune.py --base laya_models/laya --train data/train/router_train.jsonl data/train/tool_train_rows.jsonl --out laya_models/my-finetune
+    python training/finetune.py --base checkpoints/laya-vanilla --train data/train/router_train.jsonl data/train/tool_train_rows.jsonl --out laya_models/my-finetune
 
 `--train` takes one or more JSONL files, in either of two row formats:
 

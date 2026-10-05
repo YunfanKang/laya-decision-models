@@ -1,0 +1,10 @@
+{
+  "graph": {
+    "type": "noul",
+    "instructions": "Does this query name a specific person, organization or tag, ask what is popular, or ask for resources linked to another resource?"
+  },
+  "spatial": {
+    "type": "noul",
+    "instructions": "Does this query mention a specific place, coordinates, or a distance or area on a map?"
+  }
+}

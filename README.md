@@ -2,13 +2,10 @@
 
 The I-GUIDE agent makes many small decisions per request: does a search need the knowledge graph, does it need the spatial search, which analysis tool runs first? Today an LLM makes each one by writing JSON that code parses. This repo shows a **decision model** doing the same job. A decision model answers questions with a fixed set of answers directly, as probabilities, in one forward pass. The model is [Laya](https://huggingface.co/convaiinnovations/laya) (421M parameters, Apache-2.0), used as downloaded and after fine-tuning on I-GUIDE decisions.
 
-**Start with [`laya_decision_models.ipynb`](laya_decision_models.ipynb).** It covers:
+Two notebooks, both with saved outputs, so they read fine on GitHub without running anything:
 
-- how an LLM makes these decisions today;
-- how a decision model works and how it differs;
-- example queries answered by vanilla and fine-tuned Laya, side by side.
-
-The outputs are saved, so it reads fine on GitHub without running anything.
+- **[`laya_decision_models.ipynb`](laya_decision_models.ipynb): the explainer.** How an LLM makes these decisions today, how a decision model works and how it differs, and a handful of example queries answered by vanilla and fine-tuned Laya side by side.
+- **[`run_models.ipynb`](run_models.ipynb): the full run.** It loads both checkpoints from `checkpoints/` and runs them on every test query: 96 routing queries and 42 tool requests. It shows the accuracy, every answer, where the two models disagree, and a cell for your own inputs.
 
 ## Results in one table
 
@@ -29,8 +26,12 @@ The full evaluation, with its caveats, is in [`docs/evaluation.md`](docs/evaluat
 ## Contents
 
 ```
-laya_decision_models.ipynb   the notebook
+laya_decision_models.ipynb   the explainer notebook
+run_models.ipynb             both models on the full test sets
 requirements.txt
+checkpoints/                 the two models (weights in Git LFS); see checkpoints/README.md
+  laya-vanilla/                convaiinnovations/laya, unmodified (Apache-2.0)
+  laya-finetuned/              fine-tuned on I-GUIDE decisions
 data/
   questions.json             the questions exactly as each model is asked them (router wording, 53 tool options)
   eval/                      hand-labelled test sets: 96 routing queries, 89 + 42 tool-selection requests
@@ -41,30 +42,33 @@ training/finetune.py         the fine-tuning script (single GPU)
 docs/evaluation.md           the full evaluation write-up
 ```
 
-The fine-tuned weights (846 MB) are too large for git. They are attached to this repo's **GitHub release** as `laya_ft3_checkpoint.zip`.
-
 ## Run it
+
+The two weight files (842 MB each) are stored with **Git LFS**, so install [Git LFS](https://git-lfs.com) before cloning. A clone downloads about 1.7 GB. If the `model.safetensors` files come out as small text files, run `git lfs pull`.
 
 Python 3.10 or newer. A CPU is enough; you need about 4 GB of RAM.
 
 ```bash
+git lfs install
+git clone https://github.com/YunfanKang/laya-decision-models.git
+cd laya-decision-models
 pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.14"   # CPU-only machines
 pip install -r requirements.txt
 ```
 
-Get the fine-tuned checkpoint, either way:
+Then open a notebook and run all cells. Nothing else is downloaded. Run times on a 2-CPU machine:
 
-- **Download and unzip it here.** Download `laya_ft3_checkpoint.zip` from the release and unzip it in the repo folder, which creates `laya_models/laya-ft-tools-v2/`.
-- **Let the notebook fetch it.** Set `LAYA_FT3_URL` to the zip's download link.
+- **`laya_decision_models.ipynb`:** about 3 minutes.
+- **`run_models.ipynb`:** about 20 minutes, mostly the 53-option tool questions; set `TOOL_LIMIT` to run fewer.
 
-Vanilla Laya downloads from Hugging Face on first run (843 MB, pinned to revision `55cf4c4`). Then open the notebook and run all cells. On a 2-CPU machine the whole notebook takes about three minutes, plus the first download.
+On a GPU each takes under a minute.
 
 ## Reproduce the fine-tuning
 
 This needs a GPU with 12 GB or more. About 75 minutes on an RTX 3060:
 
 ```bash
-python training/finetune.py --base laya_models/laya \
+python training/finetune.py --base checkpoints/laya-vanilla \
     --train data/train/router_train.jsonl data/train/tool_train_rows.jsonl \
     --out laya_models/my-finetune
 ```

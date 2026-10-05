@@ -1,0 +1,14 @@
+{
+  "base": "laya-vanilla (convaiinnovations/laya @ 55cf4c4)",
+  "train_sha256": {
+    "data/train/tool_train_rows.jsonl": "fab086ef5f1afe9dee8efce05f1b8ae6434879af91ad60fd09596e54bdc07252",
+    "data/train/router_train.jsonl": "7a88a9af311259a644138be472dda3b34888b87f014fb188263f63d5d20eaed6"
+  },
+  "rows": 6402,
+  "calibration_rows": 640,
+  "epochs": 4,
+  "steps": 3429,
+  "device": "cuda",
+  "amp": "torch.bfloat16",
+  "seconds": 4567
+}
